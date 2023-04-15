@@ -59,6 +59,44 @@ header .drawer{
   visibility: hidden;
 }
 
+/*breadcrumb*/
+.breadcrumb {
+  max-width: 90%;
+  margin: 40px auto;
+  font-family: 'Open Sans',
+    sans-serif;
+}
+
+.breadcrumb ul {
+  display: flex;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.breadcrumb li {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+.breadcrumb a:hover {
+  color: #8087AB;
+}
 
 /*footer*/
 footer{
@@ -116,7 +154,3 @@ footer p{
   text-decoration: none;
 }
 
-@media screen and (max-width: 1024px){
-
-
-}
